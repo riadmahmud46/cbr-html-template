@@ -1,0 +1,404 @@
+/******* Google Fonts *********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/*******Global Variables******/
+:root{
+    --primary-color     : #e76f51;
+    --section-bg        : #264653;
+    --button-bg         : #E76F51;
+    --button-hover-bg   : #be4122;
+    --poppins-font      : 'Poppins', sans-serif;
+    --text-color        : #6C6C6C;
+    --white-color       : #ffffff;
+    --black-color       : #000000; 
+}
+
+body{
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--text-color);
+}
+
+img{
+    max-width: 100%;
+}
+
+h1,h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+span{
+    color:var(--primary-color);
+}
+
+.cbr-accordion .accordion-button:focus{ 
+    outline: none; 
+    box-shadow: none;
+}
+
+.btn-cbr .btn-check:focus+.btn, .btn:focus{
+    box-shadow: none;
+}
+
+.ptb-cbr{
+    padding:90px 0;
+}
+
+.section-bg{
+    background-color: var(--section-bg);
+}
+
+.btn-cbr{
+    background-color: var(--button-bg);
+    color: var(--white-color);
+    padding: 10px 25px;
+}
+
+.btn-cbr:hover{
+    background-color: var(--button-hover-bg);
+    color: var(--white-color);
+}
+
+.btn-cbr-lg{
+    background-color: var(--button-bg);
+    color: var(--white-color);
+    padding: 10px 35px;
+}
+
+.btn-cbr-lg:hover{
+    background-color: var(--button-hover-bg);
+    color: var(--white-color);
+}
+
+.btn-cbr-tr {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+
+/*******************************
+Primary Header area
+*******************************/
+header.primary-header-area .container-fluid {
+    padding: 0;
+}
+
+header.primary-header-area a.navbar-brand {
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+header.primary-header-area .navbar-nav li a {
+    color: var(--white-color);
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+}
+header.primary-header-area .navbar-nav li a:hover{
+    color:var(--text-color);
+}
+
+header.primary-header-area .navbar-nav {
+    margin-right: 40px;
+}
+
+/*******************************
+Hero Area
+*******************************/
+
+section.hero-area{
+    color: #E0E0E0;
+}
+section.hero-area h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+/*******************************
+Featured Bike Area
+*******************************/
+
+section.featured-bike-area h2 {
+    color: var(--black-color);
+}
+
+section.featured-bike-area .section-header > p {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+section.featured-bike-area img {
+    width: 70%;
+}
+
+section.featured-bike-area .section-header {
+    padding-bottom: 45px;
+}
+
+section.featured-bike-area .section-header p {
+    position: relative;
+    display: inline-block;
+}
+
+section.featured-bike-area .section-header p:after {
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 3px;
+    background: var(--primary-color);
+    bottom: -6px;
+    left: 47px;
+}
+
+.featured-bike-area img.cbr-grayscale {
+    filter: grayscale(1);
+    transition: all 0.4s;
+}
+
+.featured-bike-area img.cbr-grayscale:hover {
+    filter: grayscale(0);
+}
+
+section.featured-bike-area img {
+    transition: all 0.4s;
+}
+
+section.featured-bike-area img:hover {
+    transform: scale(1.1);
+}
+
+/*******************************
+Latest News Area
+*******************************/
+section.latest-news-area {
+    padding-bottom: 90px;
+}
+
+section.latest-news-area h2 {
+    color: var(--black-color);
+    margin-bottom: 40px;
+}
+
+.single-news-items {
+    border: 1px solid #ededed;
+    padding: 25px;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+
+.single-news-items h3 {
+    color: var(--black-color);
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+
+.latest-news-area .single-news-items:hover h3{
+    color: var(--white-color);
+}
+
+.latest-news-area .single-news-items:hover .btn-cbr-lg{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.latest-news-area .single-news-items:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/*******************************
+Testimonials Area
+*******************************/
+
+.testimonials-area .user-review {
+    padding: 15px 0;
+}
+
+.testimonials-area .user-review i.fas {
+    color: var(--primary-color);
+    font-size: 22px;
+}
+
+section.testimonials-area .section-header {
+    margin-bottom: 30px;
+}
+
+section.testimonials-area {
+    padding-bottom: 90px;
+    padding-top: 40px;
+}
+
+.testimonials-area .single-review-items {
+    padding: 35px;
+    border: 1px solid #ededed;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.testimonials-area .single-review-items img {
+    width: 150px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.testimonials-area .user-review {
+    padding: 15px 0;
+}
+
+.testimonials-area .user-review i.fas {
+    color: var(--primary-color);
+    font-size: 22px;
+}
+
+.testimonials-area .single-review-items p.name {
+    color: #23A6F0;
+    font-weight: 600;
+    margin-bottom: -4px;
+}
+
+.testimonials-area .single-review-items p.job-position {
+    color: var(--black-color);
+}
+
+.testimonials-area .single-review-items:hover {
+    background: var(--black-color);
+    color: var(--white-color);
+}
+.testimonials-area .single-review-items:hover p.job-position{
+    color:var(--white-color);
+}
+
+/*******************************
+Accordion section Area
+*******************************/
+
+section.faqs-area .section-header h2 {
+    margin-bottom: 50px;
+}
+
+section.faqs-area {
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+section.faqs-area img {
+    width: 80%;
+}
+
+.cbr-accordion .accordion-item h2 button {
+    font-size: 28px;
+    color: #383838;
+    line-height: 40px;
+}
+
+.cbr-accordion .accordion-item {
+    margin-bottom: 20px;
+    border: 2px solid #D5E5FB;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.cbr-accordion .accordion-button:not(.collapsed) {
+    background: none;
+    border: none;
+}
+
+
+/*******************************
+Footer section Area
+*******************************/
+
+footer.footer-area {
+    background: var(--black-color);
+    padding: 90px 0;
+}
+
+footer.footer-area a,footer.footer-area p {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+footer.footer-area a {
+    padding-right: 20px;
+    margin: 10px 0px;
+    display: inline-block;
+}
+
+footer.footer-area a:hover{
+    color: #ededed;
+}
+
+.footer-area h3{
+    color: var(--white-color);
+}
+
+.footer-area .apps-store-area img:nth-child(1) {
+    margin-top: 8px;
+}
+
+footer p.copyright {
+    margin-top: 15px;
+}
+
+
+/*******************************
+Upcoming bikes Area
+*******************************/
+section.upcoming-bikes {
+    padding-bottom: 90px;
+}
+
+section.upcoming-bikes h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/*******************************
+Agents Area
+*******************************/
+section.our-agent-area{
+    margin-bottom:70px;
+}
+section.our-agent-area h2 {
+    margin-bottom: 40px;
+}
+
+section.our-agent-area .single-agent-items {
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ededed;
+}
+
+section.our-agent-area .single-agent-items img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section.our-agent-area .single-agent-items p.name {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+
+/*******************************
+Responsive CSS Area
+*******************************/
+@media screen and (max-width:566px){
+    .latest-news-area .single-news-items,.testimonials-area .single-review-items {
+        margin-bottom: 20px;
+    }
+    .single-agent-items{
+        margin-bottom: 20px;
+    }
+}
+
