@@ -389,6 +389,21 @@ section.our-agent-area .single-agent-items p.name {
     color: var(--black-color);
 }
 
+.our-agent-area .social-icon a i.fab {
+    font-size: 15px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50px;
+    /* padding: 15px; */
+}
+
+.our-agent-area .social-icon a i.fab:hover {
+    background: var(--black-color);
+}
 
 /*******************************
 Responsive CSS Area
